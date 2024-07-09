@@ -1,0 +1,180 @@
+@import './assets/config';
+
+.app{
+    height: 100vh;
+
+    .background-title{
+        font-family: $title-font;
+        color: $text-color;
+        font-weight: 900;
+        font-size: 1.9rem;
+        letter-spacing: 3px;
+        text-align:center;
+        opacity: 0.5;
+        @include transition-ease;
+        padding: 10px;
+
+        @media screen and (min-width: $tablet ){
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            @include transition-ease;
+        
+        }
+        @media screen and (min-width: $laptop ){
+            font-size: 3.5rem;
+            letter-spacing: 5px;
+
+        }
+        
+    }
+    .me-img{
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        width: 350px;
+        height: 550px;
+        @include transition-ease;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        @media screen and (min-width: $tablet ){
+
+            left:35%;
+            height: 550px;
+            top: 9%;
+
+            .img{
+                height:100%;
+            }
+
+
+        }
+    }
+
+    .name{
+        z-index: 99;
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        width: 300px;
+        height: 300px;
+        
+        img{
+            width: 100%;
+            
+        }
+        @media screen and (min-width: $tablet ){
+            left: 43%;
+            
+            
+            
+
+            
+        }
+        @media screen and (min-width: $laptop ){
+            left: 45%;
+            
+        }
+    }
+
+    .create{
+        position: absolute;
+        width: 170px;
+        height: auto;
+        left: 8%;
+        top:35%;
+        rotate: 15deg;
+        z-index: -1;
+        @include transition-ease;
+
+
+        img{
+            width: 100%;
+            height:100%;
+            
+
+        }
+        @media screen and (min-width: $tablet ){
+            width: 200px;
+            left: 16%;
+            top:45%;
+
+        }
+        @media screen and (min-width: $laptop ){
+            left: 20%;
+            top:50%;
+
+        }
+
+    }
+
+    .responsive{
+        position: absolute;
+        width: 170px;
+        height: auto;
+        right: -5px;
+        bottom: -20px;
+        z-index: -1;
+        visibility: hidden;
+        @include transition-ease;
+
+
+
+        img{
+            width: 100%;
+            height:100%;
+
+        }
+        
+
+        @media screen and (min-width: $tablet ){
+            width: 200px;
+            left: 70%;
+            bottom: -40px;
+            visibility:visible
+            
+
+        }
+        @media screen and (min-width: $laptop ){
+            width: 200px;
+            left: 65%;
+            bottom: -40px;
+
+        }
+        
+    }
+
+    .brief{  
+        margin-top: 45%;
+        color: $secondary-color;
+        font-weight: 600;
+        width: 30%;
+        height: 100px;
+        padding: 10px;
+        font-family: $primary-font;
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+        left: 5px;
+        font-size: 1rem;
+
+        @media screen and (min-width: $tablet ){
+        width: 35%;
+        height: 130px;
+        bottom: 30px;
+        font-size: 1.3rem;
+
+        }
+        @media screen and (min-width: $laptop ){
+            height: 100px;
+            // bottom: -20px;
+            font-size: 1.4rem;
+            width: 30%;
+        
+
+        }
+        
+    }
+}

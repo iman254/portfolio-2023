@@ -1,0 +1,67 @@
+// Here I will store the mixins, functions, keyframes, variables for the whole site
+$primary-color: rgba(19, 61, 109, 0.979);
+$secondary-color: #FF9045;
+$text-color: #E6B5A0;
+$title-font: "Holtwood One SC", serif;
+$primary-font: "inter", sans-serif;
+$secondary-font: "Francois One", sans-serif; 
+
+$desktop: 1200px;
+$laptop: 1020px;
+$tablet: 768px;
+$phone: 576px;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color){
+    @if (lightness($color) > 40%) {
+        @return #2B2A4C;
+    } @else {
+        @return #E6B5A0;
+    }
+    
+}
+
+@mixin flex-center($direction){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+@mixin main-title{
+    font-family: $title-font-family;
+    font-size: 3rem;
+    letter-spacing: 1;
+    text-align: center;
+    color: set-text-color($primary-color);
+}
+@mixin seconday-title{
+    text-align: center;
+        font-family: $title-font;
+        font-size: 3.5rem;
+        color: $secondary-color;
+        letter-spacing: 3px;
+}
+
+@keyframes neon {
+    0% {
+        color: $text-color; 
+    }
+    50% {
+        color: $secondary-color; 
+        text-shadow: 0 0 5px  #E6B5A0; 
+    }
+    100% {
+        color: $text-color; 
+    }
+}

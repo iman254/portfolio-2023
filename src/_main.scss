@@ -1,0 +1,16 @@
+@import './assets/config.scss';
+@import './app.scss';
+
+a {
+    text-decoration: none;
+    color: set-text-color($primary-color);
+    
+}
+
+.about, .app, .work{
+    background-image: url('./assets/media/mainbg.png');
+    background-size: cover;
+    
+    
+    
+}

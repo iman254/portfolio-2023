@@ -1,0 +1,111 @@
+@import './config';
+
+.not-found{
+    video {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        object-fit: cover;
+      
+        .bgVideo {
+          width: 100%;
+          height: 100%;
+          transform: translate(-50%, -50%);
+        }
+
+    }
+    .content{
+        position: absolute;
+        top: 30%;
+        color:white;
+        text-align: center;
+        @include transition-ease;
+
+        
+
+        img{
+            position: relative;
+            opacity: 0.4;
+        
+        }
+        h1{
+            position: absolute;
+            top:20%;
+            left: 8%;
+            text-align: center;
+            font-size: 3rem;
+            font-family: $secondary-font;
+
+        }
+        h2{
+            font-family: $secondary-font;
+            height: 50px;
+            font-size: 2rem;
+            padding-top: 5px;
+
+        }
+
+        h3{
+            font-family: $secondary-font;
+            height: 50px;
+            font-size: 1.5rem;
+            padding-top: 10px;
+            width: 40%;
+            margin-left: 30%;
+            margin-top: 10px;
+            border-radius: 14px;
+            border-color: #E6B5A0;
+            color: rgb(207, 177, 163);
+            animation: neon 1.5s infinite;
+            border:2px solid  #E6B5A0;
+            @include transition-ease;
+            
+
+            &:hover{
+                background-color: #302622;
+                
+
+                
+            }
+
+        }
+        @media screen and (min-width: $tablet ){
+            
+            h1{
+                font-size: 3rem; 
+                left: 20%;
+                @include transition-ease;
+            }
+            
+        }
+        @media screen and (min-width: $laptop){
+            width: 50%;
+            left: 25%;
+            
+
+            h1{
+                font-size: 3rem;
+                left: 15%; 
+                
+                
+            }
+        }
+        @media screen and (max-width: $laptop ){
+            width: 50%;
+            left: 25%;
+            
+
+            h1{
+                font-size: 3rem; 
+                
+                
+            }
+            
+        }
+
+
+
+
+    }
+}
