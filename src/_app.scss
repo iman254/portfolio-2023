@@ -7,7 +7,7 @@
         font-family: $title-font;
         color: $text-color;
         font-weight: 900;
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         letter-spacing: 3px;
         text-align:center;
         opacity: 0.5;
@@ -29,9 +29,9 @@
     }
     .me-img{
         position: absolute;
-        top: 5%;
+        top: 10%;
         left: 30%;
-        width: 350px;
+        width: 400px;
         height: 550px;
         @include transition-ease;
 
@@ -43,7 +43,7 @@
 
             left:35%;
             height: 550px;
-            top: 9%;
+            top: 10%;
 
             .img{
                 height:100%;
@@ -68,10 +68,6 @@
         @media screen and (min-width: $tablet ){
             left: 43%;
             
-            
-            
-
-            
         }
         @media screen and (min-width: $laptop ){
             left: 45%;
@@ -84,9 +80,9 @@
         width: 170px;
         height: auto;
         left: 8%;
-        top:35%;
+        top:45%;
         rotate: 15deg;
-        z-index: -1;
+        z-index: 1;
         @include transition-ease;
 
 
@@ -112,11 +108,11 @@
 
     .responsive{
         position: absolute;
-        width: 170px;
+        width: 150px;
         height: auto;
         right: -5px;
         bottom: -20px;
-        z-index: -1;
+        z-index: 1;
         visibility: hidden;
         @include transition-ease;
 
@@ -130,17 +126,17 @@
         
 
         @media screen and (min-width: $tablet ){
-            width: 200px;
-            left: 70%;
-            bottom: -40px;
+            width: 150px;
+            left: 80%;
+            bottom: 10px;
             visibility:visible
             
 
         }
         @media screen and (min-width: $laptop ){
             width: 200px;
-            left: 65%;
-            bottom: -40px;
+            left: 80%;
+            bottom: 10px;
 
         }
         
@@ -178,3 +174,369 @@
         
     }
 }
+// about css
+
+.about{
+    height: 180vh;
+    @include transition-ease;
+    
+    @media screen and (min-width: $tablet ){
+        height: 150vh;
+            
+    }
+    @media screen and (min-width: $laptop){
+        height: 150vh;  
+    }
+
+    .about-title{
+        @include seconday-title;
+        font-size: 2.5rem;
+        margin-top: 15%;
+    
+        @media screen and (min-width: $tablet ){
+            font-size: 3rem;
+            margin-top: 10%;
+            @include transition-ease;
+                
+        }
+        @media screen and (min-width: $laptop){
+            font-size: 3.5rem;  
+        }
+        
+    }
+
+    .content{
+        margin-top: 5%;
+        width: 100%;
+        height: 150vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgba(9, 46, 85, 0.612);
+        @include transition-ease;
+        
+        @media screen and (min-width: $tablet ){
+            height: 100vh;
+            @include transition-ease;
+            flex-direction: column;
+            
+            
+                
+        }
+        @media screen and (min-width: $laptop){
+            height: 90vh;  
+        }    
+        
+    
+        .about-img{
+            width: 100%;
+            height: 30%;
+            margin-left: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5%;
+            @include transition-ease;
+             
+            
+            
+            img{
+                width: 350px;
+                height: 350px;
+                padding: 20px;
+
+            }
+            
+            @media screen and (min-width: $tablet ){
+                
+                margin-left: 0;
+                padding-top: 10%;
+                max-width: 40vh;
+                height: 100%;
+                align-item: center;
+                justify-content: center;
+                @include transition-ease;
+
+                
+            }
+         
+        }
+        @media screen and (min-width: $laptop){
+            margin-top: 5%;
+            margin-left: 0;
+            width: 100%;
+            height: 100%;
+            @include transition-ease;   
+
+            img{
+                min-width: 400px;
+                min-height: 400px;
+            }
+            
+            
+        }    
+        
+    }
+        .intro{
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            
+            
+            h3{
+                font-weight: 300;
+                font-style: italic;
+                margin-bottom: 5%;
+                font-size: 1rem;
+                color: $secondary-color;
+                font-family: $primary-font;
+                max-width: 500px;
+            }
+            p{
+                font-size: 1.3rem;
+                font-family: $primary-font;
+                color: $text-color;
+                max-width: 500px;
+                
+            }
+            ul{
+                list-style-type: none;
+                text-align: left;
+                color: $text-color;       
+                width: 100%;
+                font-size: 15px;
+                margin-top: 2rem;
+                max-width: 500px;
+                
+
+
+                li.info-item{
+                    height: 35px;
+                    margin: 15px;
+                    border-radius: 7px;
+                    padding: 5px 20px;
+                    font-family: $primary-font;
+                    
+                }
+                li.info-item.even {
+                    background-color: rgba(2, 16, 31, 0.6);
+                    color: rgb(230, 181, 160,);
+                }
+                li.info-item.odd {
+                    background-color: rgb(230, 181, 160);
+                    color: rgba(2, 16, 31);
+                }
+                strong {
+                    margin-right: 10px;
+                    
+                  }
+            }
+
+        
+                    
+            @media screen and (min-width: $tablet ){
+                h3{
+                    margin-bottom: 25px;
+                    font-size: 1.3rem;
+                    max-width: 600px;
+                   
+                }
+                p{
+                    font-size: 1.5rem;
+                    max-width: 600px;
+                }
+                ul{
+                           
+                    width: 100%;
+                    font-size: 1rem;
+                    margin-top: 2rem;
+                    max-width: 600px;
+                    padding: 5px 10px;
+                }
+
+            }
+            @media screen and (min-width: $laptop){
+                h3{
+                    font-size: 1.5rem;
+                }  
+               
+                ul{
+                           
+                    width: 100%;
+                    font-size: 1.2rem;
+                    margin-top: 2rem;
+                    max-width: 600px;
+                    padding: 5px 10px;
+                    @include transition-ease;
+                }
+                
+                
+            }
+           
+
+        }
+    @media screen and (min-width: $tablet ){
+        
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        
+        .about-img{
+            width: 40%
+                
+        }
+        .intro{
+            
+            width: 60%;
+            height: 100%;
+            text-align: center;
+            padding: 20px 30px;
+
+            
+        }           
+            
+    }
+}
+    
+// Services
+.details{
+    min-height: 400vh;
+    color: $secondary-color;
+    
+    @include transition-ease;
+ 
+    @media screen and (max-width: $phone){
+        
+    } 
+    @media screen and (min-width: $tablet ){
+        
+    }
+
+    @media screen and (min-width: $laptop ){
+        
+    }
+
+    
+    .service-title{
+        margin-top: 10%;
+        @include seconday-title;
+        padding: 15px 5px;
+        color: $secondary-color;
+        font-size: 2.5rem;
+        text-align: center;
+        @include transition-ease;
+
+        @media screen and (min-width: $phone) and (max-width: $tablet){
+            font-size: 2.7rem;
+        }
+        
+        @media screen and (min-width: $tablet ){
+            font-size: 3rem;
+            margin-top: 10%;
+            @include transition-ease;
+        }
+    }
+
+            
+
+
+    .qualities{
+        min-height: 200px;
+        width: 100%;
+        padding: 10px 30px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap:wrap;     
+        gap: 30px;
+        @include transition-ease;
+
+        li{
+            flex: 1 1 100%;
+            // max-width: 100%;
+            height: 450px;
+            text-align: center;
+            @include transition-ease;
+            background-color: #fdfcfc2d;
+            
+            img{
+                margin-top: 10px;
+                padding-top: 10px;
+                height: 200px;
+                width: 200px;
+            }
+
+            h3 {
+                height:60px;
+                color: $text-color;
+                font-size: 1.7rem;
+                margin-top: 5%;
+                font-family: $primary-font;
+                display: flex;
+                align-items: center;
+                justify-content: center
+            }
+
+            p{
+                color: $secondary-color;
+                font-size: 1.4rem;
+                font-family: $primary-font;
+                padding: 20px 10px;
+                min-height: 150px;
+
+            }
+        }
+        @media (min-width: $phone) {
+            flex-wrap: nowrap;
+            justify-content: space between;
+            flex-direction: column;
+            @include transition-ease;
+            gap: 0;
+            
+
+            li{
+                flex: 1 1 45%;
+                max-width: 45%;
+                padding: 10px;
+                @include transition-ease;
+            }
+            li:nth-child(even){
+                margin-right: auto;
+            }
+            li:nth-child(odd){
+                margin-left: auto;
+            }
+        
+        }
+            
+        
+        
+
+    }    
+
+    .to-profile{
+        height: 100px;
+        font-size: 2rem;
+        margin-left: 20%;
+        margin-top: 5%;
+
+        padding-top: 30px;
+        max-width: 60%;
+        font-family: $secondary-font;
+        color: $text-color;
+        border: 2px solid #ff9045;
+        text-align: center;
+        
+
+        span{
+            animation: neon 1.5s infinite;
+            
+        }
+        
+    }
+    
+}
+    

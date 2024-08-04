@@ -1,15 +1,15 @@
 // Here I will store the mixins, functions, keyframes, variables for the whole site
 $primary-color: rgba(19, 61, 109, 0.979);
-$secondary-color: #FF9045;
-$text-color: #E6B5A0;
+$secondary-color: #ff9045;
+$text-color: rgb(230, 181, 160);
 $title-font: "Holtwood One SC", serif;
 $primary-font: "inter", sans-serif;
 $secondary-font: "Francois One", sans-serif; 
 
 $desktop: 1200px;
-$laptop: 1020px;
+$laptop: 992px;
 $tablet: 768px;
-$phone: 576px;
+$phone: 600px;
 
 *{
     box-sizing: border-box;
@@ -48,7 +48,6 @@ $phone: 576px;
 @mixin seconday-title{
     text-align: center;
         font-family: $title-font;
-        font-size: 3.5rem;
         color: $secondary-color;
         letter-spacing: 3px;
 }
@@ -64,4 +63,12 @@ $phone: 576px;
     100% {
         color: $text-color; 
     }
+}
+
+
+h1{
+    font-family: $title-font;
+    letter-spacing: 3px;
+    text-align:center;
+    padding: 10px;
 }
