@@ -112,7 +112,7 @@ export default function App() {
         
         </ul>
       <h3 className="to-profile">
-        To download the full resume, <span><Link to='#'>Click here!</Link></span>   
+        To download the full resume, <span><Link to='https://drive.google.com/file/d/16PBxWAhMzNLSjq0Q25CYdNpKyjEIV9vT/view?usp=sharing'>Click here!</Link></span>   
       
       </h3>
     </div>
